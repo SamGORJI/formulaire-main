@@ -1,0 +1,161 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	margin: 40px;
+}
+
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(71, 226, 205);
+	border-radius: 40px;
+	width: 1550px;
+	height: 600px;
+	margin: auto;
+}
+
+img{
+	width: 400px;
+}
+
+form{
+	width: 675px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#formulaire{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form{
+	display: flex;
+	gap: 20px;
+}
+
+.emailform{
+	display: flex;
+	flex-direction: column;
+}
+
+#errormail{
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+}
+
+input{
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	border: none;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 200px;
+	border-bottom-left-radius: 150px;
+}
+
+#sujet{
+	width: 500px;
+	border-radius: 40px;
+}
+
+textarea{
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	border: none;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 200px;
+	border-bottom-left-radius: 150px;
+	padding: 35px;
+}
+
+input:required:focus:invalid{
+	border: dashed 4px rgb(255, 0, 0);
+}
+
+input:required:focus:valid{
+	border: solid 4px rgb(0, 128, 6);
+}
+
+textarea:required:focus:invalid{
+	border: dashed 4px rgb(255, 0, 0);
+}
+
+textarea:required:focus:valid{
+	border: solid 4px rgb(0, 128, 28);
+}
+
+button{
+	width: 500px;
+	height: 40px;
+	background-color: #7373E3;
+	border: none;
+	border-radius: 40px;
+}
+
+button:hover{
+	transform: scale(1.2);
+	color: white;
+}
+
+.send{
+	background-color: #59981A;
+	text-align: center;
+	width: 250px;
+}
+
+@media (max-width: 1130px){
+	#container{
+		width: 800px;
+	}
+
+	img, form, #sujet, textarea, button{
+		width: 350px;
+	}
+
+	input{
+		width: 200px;
+	}
+
+	form{
+		padding-right: 15px;
+	}
+
+}
+
+@media (max-width: 800px){
+	#container{
+		width: 500px;
+	}
+
+	img, form, #sujet, textarea, button{
+		width: 250px;
+	}
+
+	input{
+		width: 100px;
+	}
+
+	form{
+		padding-right: 15px;
+	}
+
+}
+
+
+
+
